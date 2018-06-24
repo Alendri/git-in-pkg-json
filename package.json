@@ -2,6 +2,7 @@
     "name": "git-in-pkg-json",
     "displayName": "Git in package.json functions",
     "description": "Functions to manage git-repo imports in package.json.",
+    "repository": "github:Alendri/git-in-pkg-json",
     "version": "0.0.1",
     "publisher": "alendri",
     "engines": {
