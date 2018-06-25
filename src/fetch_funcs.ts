@@ -86,8 +86,8 @@ function addPeerDependenciesOfGits(json_doc: LooseObject, tags: VersionTag[]): P
         let promise = fetchPackageJson(tag).then((package_json: LooseObject) => {
             // console.log(package_json);
             if (package_json.hasOwnProperty("peerDependencies")) {
-                console.log("got peers");
-                console.log(package_json.peerDependencies);
+                // console.log("got peers");
+                // console.log(package_json.peerDependencies);
                 
                 return package_json.peerDependencies;
             }
@@ -102,8 +102,8 @@ function addPeerDependenciesOfGits(json_doc: LooseObject, tags: VersionTag[]): P
     return Promise.all(promises).then((peer_deps) => {
         let all_deps: LooseObject = Object.assign({}, json_doc.dependencies);
         peer_deps.forEach((deps) => {
-            console.log("deps");
-            console.log(deps);
+            // console.log("deps");
+            // console.log(deps);
             Object.keys(deps).forEach((key) => {
                 let value = deps[key];
                 if (all_deps.hasOwnProperty(key)) {
