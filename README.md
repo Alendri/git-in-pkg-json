@@ -1,3 +1,6 @@
+# Unmaintained! This extension is not actively worked on, do not use it!
+**Please do not use this extension, it is not maintained! Many modern packaging solutions do no longer support use of `git+[your-repo-here].git` within a package.json file. It is also generally a better idea to properly publish the code as modules, publicly, through your own NPM namespace or self hosted module respository.**
+
 # Functions for using git repos in package.json
 VS Code extension with functions for managing git-repo imports in package.json.
 
